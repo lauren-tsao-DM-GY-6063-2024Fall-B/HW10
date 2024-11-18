@@ -9,7 +9,7 @@ function preload() {
   mMelody = loadSound("../assets/Yppah-NeverMessWithSunday_1min_Melody.mp3");
   mOther = loadSound("../assets/Yppah-NeverMessWithSunday_1min_Other.mp3");
 
-  // mDrums.setVolume(1.2)
+  // mDrums.setVolume(0.3)
   
 }
 
@@ -33,14 +33,14 @@ fftMelody.analyze();
 
 //bass(blue)
  let energyBass = fftBass.getEnergy(5, 7);
-  let diamBass = map(energyBass, 50, 70, 0, height/8);
-  strokeWeight(5)
+  let diamBass = map(energyBass, 50, 70, 0, height/10);
+  strokeWeight(2)
   stroke(20, 30, 200)
   ellipse(width / 2, height / 2, diamBass);
 
   //drums (orange)
   let energyDrums = fftDrums.getEnergy(200, 250);
-  let diamDrums = map(energyDrums, 246, 255, 0, height/1.5);
+  let diamDrums = map(energyDrums, 242, 255, 0, height/1.5);
   stroke(255, 165, 0)
   strokeWeight(3)
   ellipse(width / 2, height / 2, diamDrums);
@@ -49,7 +49,7 @@ fftMelody.analyze();
   let energyMelody = fftMelody.getEnergy(6800, 6900); // get energy from the 1-5 frequency range
   let diamMelody = map(energyMelody, 30, 50, 0, height/10); // assuming that the 1-5 frequency range is between the loudness of 0-255
   stroke(5, 165, 0)
-  strokeWeight(1)
+  strokeWeight(5)
   ellipse(width / 2, height / 2, diamMelody);
 }
 
