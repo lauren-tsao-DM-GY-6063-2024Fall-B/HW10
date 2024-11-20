@@ -65,7 +65,7 @@ function drawBRipples(ripplesBass) {
     ellipse(width / 2, height / 2, rippleB.size);
 
     rippleB.size *= 1; // reduce the size of bass ripples by 0.99 over time
-    rippleB.alpha -= 20; // reduce alpha of bass ripples by 20
+    rippleB.alpha -= 5; // reduce alpha of bass ripples by 20
   }
 }
 
@@ -78,7 +78,7 @@ function drawDRipples(ripplesDrums) {
     ellipse(width / 2, height / 2, rippleD.size);
 
     rippleD.size *= 0.99;
-    rippleD.alpha -= 20;
+    rippleD.alpha -= 50;
   }
 }
 
@@ -87,7 +87,7 @@ function drawMRipples(ripplesMelody) {
   for (let i = ripplesMelody.length - 1; i >= 0; i--) {
     let rippleM = ripplesMelody[i];
     stroke(rippleM.color.levels[0], rippleM.color.levels[1], rippleM.color.levels[2], rippleM.alpha);
-    strokeWeight(0.8);
+    strokeWeight(10);
     ellipse(width / 2, height / 2, rippleM.size);
 
     rippleM.size *= 0.99;
