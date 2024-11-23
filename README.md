@@ -1,64 +1,14 @@
-# p5.js multi sketch template
+## Creative Coding (DM-GY 6063) - Programming: Week 10
 
-By putting different sketch.js and index.html files in directories we can more easily switch between multiple experiments.
+### HW10:
+- Please click [here](https://lauren-tsao-dm-gy-6063-2024fall-b.github.io/HW10/).
 
----
+#### HW10_0
+- Song title: Nver Mess with Sunday by Yppah (full song [here](https://youtu.be/NqfAj1C7rPc?si=f02VcEKE8QjkZd3j))
+- Something that I discovered while working on this was that depending on the sound devices used to hear the song, the visuals changed. I remember from what was covered in office hours is that the reason was due to the slight lag in bluetooth devices since they are not directly connected to the computer. And because p5.js is taking data from the playback, the visuals produced is different.
+- I made a video showing the comparison [here](https://drive.google.com/file/d/1U6VOvjfGWR_qS6MCzUdxXusnS3vod7tj/view?usp=sharing), maybe the visuals are different on your device too!
 
-This is a README file that can be used to describe and document your assignment.
-
-Markdown Cheatsheet (from [https://www.markdownguide.org/cheat-sheet/](https://www.markdownguide.org/cheat-sheet/)):
-
----
----
-
-# Heading1
-## Heading2
-### Heading3
-#### Heading4
-##### Heading5
-###### Heading6
-
-**bold text**
-
-*italicized text*
-
-~~strikethrough text~~
-
-Ordered List:
-1. First item
-2. Second item
-3. Third item
-
-Unordered List:
-- First item
-- Second item
-- Third item
-
-`short code block`
-
-```
-extended code block
-fun() {
-  return 0
-}
-```
-
-Link:  
-[linked text](https://www.example.com)
-
-
-Image with url:  
-![image description](https://dm-gy-6063-2024f-b.github.io/assets/homework/02/clark-espaco-modulado-00.jpg)
-
-
-Image on repo:  
-![image description](./file-name.jpg)
-
-
-To start a new line, add two spaces at the end of a line, like this:  
-this is a new line.
-
-
-To start a new paragraph, leave an empty line between two lines of text.
-
-This is a new paragraph.
+#### HW10_1
+- Song title: Tokyo by Rynn (full song [here](https://youtu.be/LNyNIcjCR3s?si=4iqggYc7FBipItks))
+- I wanted to use the soundwaves to create an artwork that resembles the Tokyo skyline at night, reflected on the water, while capturing the vibe of the song.
+- Added a subtle animation to it using the random() function.

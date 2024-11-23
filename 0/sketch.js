@@ -48,7 +48,7 @@ function draw() {
   let diamMelody = map(energyMelody, 30, 50, 0, height / 10)
   ripplesMelody.push({ size: diamMelody, alpha: 255, color: color(233, 0, 255) });
 
-  // Draw ripples based on the established bass, drums, and melody frequency ranges above
+  // draw ripples based on the established bass, drums, and melody frequency ranges above
   drawBRipples(ripplesBass);
   drawDRipples(ripplesDrums);
   drawMRipples(ripplesMelody);
@@ -64,8 +64,8 @@ function drawBRipples(ripplesBass) {
     strokeWeight(0.8);
     ellipse(width / 2, height / 2, rippleB.size);
 
-    rippleB.size *= 1; // reduce the size of bass ripples by 0.99 over time
-    rippleB.alpha -= 5; // reduce alpha of bass ripples by 20
+    rippleB.size *= 1; // reduce the size of bass ripples by 1 over time
+    rippleB.alpha -= 5; // reduce alpha of bass ripples by 5 over time
   }
 }
 
