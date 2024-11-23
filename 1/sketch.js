@@ -8,7 +8,7 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   noFill();
-  samples = song.getPeaks(); // returns an array of amplitude peaks (highest and lowest points of a sample, 1 to -1 for normalized sound)
+  samples = song.getPeaks(); // returns an array of amplitude peaks (the highest and lowest points of a sample, which is 1 to -1 for normalized sound)
   print(width, samples.length);
 }
 
