@@ -78,7 +78,7 @@ function drawDRipples(ripplesDrums) {
     ellipse(width / 2, height / 2, rippleD.size);
 
     rippleD.size *= 0.99;
-    rippleD.alpha -= 50;
+    rippleD.alpha -= 30;
   }
 }
 

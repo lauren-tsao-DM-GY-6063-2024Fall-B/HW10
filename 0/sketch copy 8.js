@@ -39,7 +39,7 @@ function draw() {
 
   for (let i = 0; i < maxEchoCount; i++) {
     // Adjust the rate of scaling here (slower decay)
-    let echoDiam = diamBass * 0.2; // Slower scaling (use 0.02 instead of 0.1)
+    let echoDiam = diamBass * (1 - i * 0.02); // Slower scaling (use 0.02 instead of 0.1)
     let echoAlpha = map(i, 0, maxEchoCount - 1, 255, 50); // Fade out opacity
     strokeWeight(5);
     stroke(20, 30, 200, echoAlpha); // Set the alpha for transparency
