@@ -27,14 +27,14 @@ function draw() {
     let mColor = map(samples[idx], 0, 1, 255, 0);
     
     // draw lines and ellipses
-    strokeWeight(size / 20)
-    stroke(mColor, 0, 150,)
+    strokeWeight(size / 20);
+    stroke(mColor, 0, 150,);
     
-    line(x, height/2, x, height/2 - h)
+    line(x, height/2, x, height/2 - h);
     fill(mColor + 20, 100, 0, mColor);
   
-    stroke(255, 255, 0, 50)
-    strokeWeight(8)
+    stroke(255, 255, 0, 50);
+    strokeWeight(8);
     ellipse(x - size / 2, height / 2 + h, size/2);
  
   }

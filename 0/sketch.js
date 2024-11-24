@@ -45,7 +45,7 @@ function draw() {
 
   // melody (pink)
   let energyMelody = fftMelody.getEnergy(6800, 6900); 
-  let diamMelody = map(energyMelody, 30, 50, 0, height / 10)
+  let diamMelody = map(energyMelody, 30, 50, 0, height / 10);
   ripplesMelody.push({ size: diamMelody, alpha: 255, color: color(233, 0, 255) });
 
   // draw ripples based on the established bass, drums, and melody frequency ranges above
@@ -64,7 +64,6 @@ function drawBRipples(ripplesBass) {
     strokeWeight(0.8);
     ellipse(width / 2, height / 2, rippleB.size);
 
-    rippleB.size *= 1; // reduce the size of bass ripples by 1 over time
     rippleB.alpha -= 5; // reduce alpha of bass ripples by 5 over time
   }
 }
@@ -77,7 +76,7 @@ function drawDRipples(ripplesDrums) {
     strokeWeight(5);
     ellipse(width / 2, height / 2, rippleD.size);
 
-    rippleD.size *= 0.99;
+    rippleD.size *= 0.99; // // reduce the size of bass ripples by 1% over time
     rippleD.alpha -= 30;
   }
 }
